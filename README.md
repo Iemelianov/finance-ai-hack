@@ -1,11 +1,12 @@
 # Finance AI Hack – Cognee-powered Agents
 
-A local-first demo that layers three finance workflows on top of a Cognee knowledge graph and distil SLM:
+Local-first Streamlit app that sits on a Cognee knowledge graph + distil SLM to solve finance ops tasks.
 
-- Reconciliation dashboard (up to 50 invoices)
-- Agentic Invoice Concierge (normalize pasted invoice text)
-- Financial Anomaly Mini-Detective (top anomalies + recommendations)
-- Extra tool: Missing Invoice Detective via custom prompt
+## What the app can do
+- **Reconciliation Dashboard**: Pulls up to 50 invoices with match status, type, anomaly severity, and a short explanation.
+- **Agentic Invoice Concierge**: Paste raw invoice text; it normalizes vendor, IDs, dates, amount, currency, category, risk, and triage status.
+- **Financial Anomaly Mini-Detective**: Surfaces the most relevant anomalies with reason codes and recommended next steps.
+- **Missing Invoice Detective**: Prompt-driven tool to flag missing invoices by vendor/period using the custom prompt.
 
 The UI lives in `app_streamlit.py`; shared agent logic is in `core/`. The Cognee export and local models are **not** tracked in git (see `.gitignore`)—they must be present locally to run.
 
