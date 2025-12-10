@@ -1,4 +1,0 @@
-Now for the real task, solve the task in question block based on the context in context block.
-Generate only the solution, do not generate anything else
-<context>`{{ context }}`</context>
-<question>`{{ question }}`</question>
