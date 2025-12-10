@@ -1,0 +1,32 @@
+__pycache__/
+*.pyc
+*.pyo
+*.log
+*.tmp
+*.zip
+.DS_Store
+
+# Virtual environments
+.venv/
+*/.venv/
+
+# Local models and large artifacts
+models/
+*.gguf
+*.bin
+*.pt
+*.pth
+*.ckpt
+
+# Cognee export data (contains >100MB DB files)
+cognee-minihack/cognee_export/
+
+# Generated graph preview
+cognee-minihack/graphs/after_setup.html
+
+# Local caches and datasets
+*.lance
+*.lancedb
+*.db
+*.sqlite
+
